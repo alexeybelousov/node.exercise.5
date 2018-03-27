@@ -12,7 +12,18 @@ input
     output.write(data);
   });
 
-// Эта запись короче но не понятно как вывестиданные в консоль
+// Эта запись короче но не понятно как вывестиданные в консоль хеш
 // input
 //   .pipe(crypto.createHash('md5').setEncoding('hex'))
 //   .pipe(output);
+
+
+// Или так? но как получить в стриме записи данные чтобы вывести в консоль?
+// const hash = crypto.createHash('sha1').setEncoding('hex');
+//
+// input
+//   .pipe(hash)
+//   .pipe(output)
+//   .on('finish', function () {
+//     console.log(?);
+//   });
